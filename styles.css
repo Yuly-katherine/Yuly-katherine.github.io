@@ -26,7 +26,7 @@
     padding: 0.3em;
     position: absolute;
     width: 100%;
-    max-width: 920px;
+    max-width: 950px;
     text-align: center;
     color: #fff;
     margin:auto
@@ -37,8 +37,17 @@
     font-size:2em;
     font-family: sans-serif;
     text-align: center;
+    animation: titleAnimation 2s linear;
 }
 
+@keyframes titleAnimation{
+    0%{
+        transform:translateY(-100%);
+    }
+    100%{
+        transform:translateY(50%);
+    }
+}
 .banner__img{
     height: 320px;
     width: 320px;
@@ -51,5 +60,11 @@
 .banner__p{
     line-height: 2;
     font-size: 1.2em;
+    font-family: sans-serif;
+}
+
+.banner__me{
+    line-height: 3;
+    font-size: 1.5em;
     font-family: sans-serif;
 }
